@@ -186,8 +186,18 @@ if(drone.x>1200){
 
 	drone.velocityY = drone.velocityY + 0.8
 drone.collide(invisibleGround)
+		  
+tower2=createSprite(1100,500);
+tower2.addImage(towerimg);
+tower2.scale=2;
 
-drone.display();
+//my attempt to drop ppl
+		  
+		  if(keyCode===13){
+	 people.x=tower2.x;
+	 people.y=tower2.y-10;
+ }
+	
 	
 
 	
